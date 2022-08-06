@@ -26,6 +26,7 @@ const userSchema= new mongoose.Schema({
   password: String
 });
 
+const upload="load me up"
 
 userSchema.plugin(encrypt, {secret: process.env.SECRET, encryptedFields: ['password']  })
 
